@@ -379,7 +379,7 @@
                 </div>
 
                 <div class="col-lg-8">
-                    <form id="pricing-appointment__form"  method="POST" action="./mail.php" class="pricing-appointment__form mt-md-60 mt-sm-60 mt-xs-60">
+                    <form id="pricing-appointment__form"   class="pricing-appointment__form mt-md-60 mt-sm-60 mt-xs-60">
                         <div class="row">
                             <div class="col-sm-6">
                                 <div class="pricing-appointment__form-input">
@@ -398,7 +398,7 @@
                             </div>
                             <div class="col-sm-6">
                                 <div class="pricing-appointment__form-input">
-                                    <input name="phone" id="phone" type="text" placeholder="Date">
+                                    <input name="phone" id="department" type="text" placeholder="Department">
                                 </div>
                             </div>
                             <div class="col-sm-12">
@@ -408,7 +408,7 @@
                             </div>
 
                             <div class="col-12">
-                                <button type="submit" class="rr-btn rr-btn__primary-color mt-0">
+                                <button onclick="submiter()" type="submit" class="rr-btn rr-btn__primary-color mt-0">
                                     <span class="btn-wrap">
                                         <span class="text-one">Send Now</span>
                                         <span class="text-two">Send Now</span>
@@ -592,7 +592,85 @@
 </footer>
 <!-- Footer area end -->
 
-<!-- JS here --><script>
+<!-- JS here -->
+ <script>
+    function submiter(){
+        document.getElementById("pricing-appointment__form").addEventListener("submit", function(event) {
+    event.preventDefault(); // Prevent form submission
+
+    // Get form values
+    const name = document.getElementById("name").value.trim();
+    const email = document.getElementById("email").value.trim();
+    const phone = document.getElementById("phone").value.trim();
+    const department = document.getElementById("department").value.trim();
+    const message = document.getElementById("textarea").value.trim();
+
+    // Validate form values
+    if (!name) {
+        alert("Please enter your name.");
+        return;
+    }
+
+    if (!email || !validateEmail(email)) {
+        alert("Please enter a valid email address.");
+        return;
+    }
+
+    if (!phone) {
+        alert("Please enter your phone number.");
+        return;
+    }
+
+    if (!department) {
+        alert("Please enter your department.");
+        return;
+    }
+
+    if (!message) {
+        alert("Please enter your message.");
+        return;
+    }
+
+    // Prepare data object
+    const data = {
+        name: name,
+        phone: phone,
+        email: email,
+        department: department,
+        message: message
+    };
+
+    data.toemail = ["vinayak@appaddindia.com", "suhassk2@gmail.com"];
+    data.toke = "1dytfchtgfghvyhvvhvh";
+
+    // Send data to the server
+    fetch("https://emailer-phi.vercel.app/hospital", {
+        method: "POST",
+        headers: {
+            "Content-Type": "application/json"
+        },
+        body: JSON.stringify(data)
+    }).then(response => response.json())
+    .then(result => {
+            alert("Your message has been sent successfully!");
+            document.getElementById("pricing-appointment__form").reset(); // Reset the form
+    
+    })
+    .catch(error => {
+        console.error("Error:", error);
+        alert("There was an error sending your message. Please try again.");
+    });
+});
+
+// Email validation function
+function validateEmail(email) {
+    const re = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+    return re.test(String(email).toLowerCase());
+}
+    }
+    </script>
+ 
+ <script>
 window.jQuery ||
 document.write("<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js'><\/script>");
 </script>
