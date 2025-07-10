@@ -1,237 +1,483 @@
-<!doctype html>
+<!DOCTYPE html>
 <html class="no-js" lang="zxx">
-
-<head>
-    <meta charset="utf-8">
-    <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
     <title>Dr. Suhas S Kumar</title>
-    <meta name="description" content="Dr. Suhas S Kumar">
-    <meta name="author" content="ahmmedsabbirbd">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Dr. Suhas S Kumar" />
+    <meta name="author" content="ahmmedsabbirbd" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <!-- Place favicon.ico in the root directory -->
-    <link rel="icon" href="/path/to/favicon.ico" type="assets/imgs/arara.png">
-    <link rel="shortcut icon" type="image/x-icon" href="assets/imgs/arara.png">
+    <link rel="icon" href="/path/to/favicon.ico" type="assets/imgs/arara.png" />
+    <link
+      rel="shortcut icon"
+      type="image/x-icon"
+      href="assets/imgs/arara.png"
+    />
     <!-- CSS here -->
-    <link rel="stylesheet" href="assets/css/vendor/bootstrap.min.css">
-    <link rel="stylesheet" href="assets/css/vendor/animate.min.css">
-    <link rel="stylesheet" href="assets/css/plugins/swiper.min.css">
-    <link rel="stylesheet" href="assets/css/vendor/magnific-popup.css">
-    <link rel="stylesheet" href="assets/css/vendor/fontawesome-pro.css">
-    <link rel="stylesheet" href="assets/css/vendor/spacing.css"> 
-    <link rel="stylesheet" href="assets/css/plugins/odometer-theme-default.css">
-    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="assets/css/vendor/bootstrap.min.css" />
+    <link rel="stylesheet" href="assets/css/vendor/animate.min.css" />
+    <link rel="stylesheet" href="assets/css/plugins/swiper.min.css" />
+    <link rel="stylesheet" href="assets/css/vendor/magnific-popup.css" />
+    <link rel="stylesheet" href="assets/css/vendor/fontawesome-pro.css" />
+    <link rel="stylesheet" href="assets/css/vendor/spacing.css" />
+    <link
+      rel="stylesheet"
+      href="assets/css/plugins/odometer-theme-default.css"
+    />
+    <link rel="stylesheet" href="assets/css/main.css" />
     <style>
-        .menuhiddersmall{
-            color: black;
+      .menuhiddersmall {
+        color: black;
+      }
+      .menuhidderbig {
+        color: #071c3c;
+      }
+      @media (max-width: 1199px) {
+        .menuhiddersmall {
+          color: white;
         }
-        .menuhidderbig{
-            color:#071c3c ;
+        .menuhidderbig {
+          color: white;
         }
-        @media (max-width:1199px){
-            .menuhiddersmall{
-            color: white;
+      }
+      .small {
+        display: none;
+      }
+      @media only screen and (max-width: 992px) {
+        .small {
+          display: block;
         }
-        .menuhidderbig{
-            color:white ;
-        }  
-        }
-        .small{
-    display: none;
-}
-@media only screen and (max-width: 992px){
-    .small{
-    display: block;
-}
-        }
+      }
     </style>
-</head>
+  </head>
 
-<body class="body-1">
+  <body class="body-1">
+    <!--[if lte IE 9]>
+      <p class="browserupgrade">
+        You are using an <strong>outdated</strong> browser. Please
+        <a href="https://browsehappy.com/">upgrade your browser</a> to improve
+        your experience and security.
+      </p>
+    <![endif]-->
 
-<!--[if lte IE 9]>
-<p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
-<![endif]-->
+    <!-- preloader start -->
 
-<!-- preloader start -->
-<div id="preloader">
-    <div class="preloader-close">x</div>
-    <div class="sk-three-bounce">
+    <!-- preloader end -->
+
+    <!-- preloader start -->
+    <div class="loading-form">
+      <div class="sk-three-bounce">
         <div class="sk-child sk-bounce1"></div>
         <div class="sk-child sk-bounce2"></div>
         <div class="sk-child sk-bounce3"></div>
+      </div>
     </div>
-</div>
-<!-- preloader end -->
+    <!-- preloader end -->
 
-<!-- preloader start -->
-<div class="loading-form">
-    <div class="sk-three-bounce">
-        <div class="sk-child sk-bounce1"></div>
-        <div class="sk-child sk-bounce2"></div>
-        <div class="sk-child sk-bounce3"></div>
+    <!-- Backtotop start -->
+    <div id="scroll-percentage">
+      <span id="scroll-percentage-value"></span>
     </div>
-</div>
-<!-- preloader end -->
+    <!-- Backtotop end -->
 
-<!-- Backtotop start -->
-<div id="scroll-percentage">
-    <span id="scroll-percentage-value"></span>
-</div>
-<!-- Backtotop end -->
-
-<!-- Offcanvas area start -->
-<div class="fix">
-    <div class="offcanvas__area">
+    <!-- Offcanvas area start -->
+    <div class="fix">
+      <div class="offcanvas__area">
         <div class="offcanvas__wrapper">
-            <div class="offcanvas__content">
-                <div class="offcanvas__top d-flex justify-content-between align-items-center">
-                    <div class="offcanvas__logo">
-                        <a href="index.html">
-                            <img style="width: 220px;padding: 10px 20px;background-color: white;border-radius: 10px;" src="assets/imgs/arara.png" alt="logo not found">
-                        </a>
-                    </div>
-                    <div class="offcanvas__close">
-                        <button class="offcanvas-close-icon animation--flip">
-                                <span class="offcanvas-m-lines">
-                              <span class="offcanvas-m-line line--1"></span><span class="offcanvas-m-line line--2"></span><span class="offcanvas-m-line line--3"></span>
-                                </span>
-                        </button>
-                    </div>
-                </div>
-                <div class="mobile-menu fix"></div>
-                <div class="offcanvas__social">
-                    <h4 class="offcanvas__title mb-20">Dr. Suhas S Kumar</h4>
-                    <p class="mb-30">Suhas S Kumar, MS, is a skilled surgeon with 8 years' experience, serving as General Surgeon and Assistant Professor since 2017.</p>
-                    <ul class="header-top-socail-menu d-flex">
-                        <li><a href="https://www.facebook.com/"><i class="fab fa-facebook-f"></i></a></li>
-                        <li><a href="https://twitter.com/"><i class="fab fa-twitter"></i></a></li>
-                        <li><a href="https://www.pinterest.com/"><i class="fa-brands fa-pinterest-p"></i></a></li>
-                        <li><a href="https://vimeo.com/"><i class="fa-brands fa-vimeo-v"></i></a></li>
-                    </ul>
-                </div>
-                <div class="offcanvas__btn d-sm-none">
-                    <div class="header__btn-wrap">
-                        <a href="https://api.whatsapp.com/send/?phone=%2B9035942513&text=Hello" class="rr-btn rr-btn__theme rr-btn__theme-white mt-40 mt-sm-35 mt-xs-30">
-                            <span class="btn-wrap">
-                                <span class="text-one">Book appoinment</span>
-                                <span class="text-two">Book appoinment</span>
-                            </span>
-                        </a>
-                    </div>
-                </div>
+          <div class="offcanvas__content">
+            <div
+              class="offcanvas__top d-flex justify-content-between align-items-center"
+            >
+              <div class="offcanvas__logo">
+                <a href="index.html">
+                  <img
+                    style="
+                      width: 220px;
+                      padding: 10px 20px;
+                      background-color: white;
+                      border-radius: 10px;
+                    "
+                    src="assets/imgs/arara.png"
+                    alt="logo not found"
+                  />
+                </a>
+              </div>
+              <div class="offcanvas__close">
+                <button class="offcanvas-close-icon animation--flip">
+                  <span class="offcanvas-m-lines">
+                    <span class="offcanvas-m-line line--1"></span
+                    ><span class="offcanvas-m-line line--2"></span
+                    ><span class="offcanvas-m-line line--3"></span>
+                  </span>
+                </button>
+              </div>
             </div>
+            <div class="mobile-menu fix"></div>
+            <div class="offcanvas__social">
+              <h4 class="offcanvas__title mb-20">Dr. Suhas S Kumar</h4>
+              <p class="mb-30">
+                Suhas S Kumar, MS, is a skilled surgeon with 8 years'
+                experience, serving as General Surgeon and Assistant Professor
+                since 2017.
+              </p>
+              <ul class="header-top-socail-menu d-flex">
+                <li>
+                  <a href="https://www.facebook.com/"
+                    ><i class="fab fa-facebook-f"></i
+                  ></a>
+                </li>
+                <li>
+                  <a href="https://twitter.com/"
+                    ><i class="fab fa-twitter"></i
+                  ></a>
+                </li>
+                <li>
+                  <a href="https://www.pinterest.com/"
+                    ><i class="fa-brands fa-pinterest-p"></i
+                  ></a>
+                </li>
+                <li>
+                  <a href="https://vimeo.com/"
+                    ><i class="fa-brands fa-vimeo-v"></i
+                  ></a>
+                </li>
+              </ul>
+            </div>
+            <div class="offcanvas__btn d-sm-none">
+              <div class="header__btn-wrap">
+                <a
+                  href="https://api.whatsapp.com/send/?phone=%2B9035942513&text=Hello"
+                  class="rr-btn rr-btn__theme rr-btn__theme-white mt-40 mt-sm-35 mt-xs-30"
+                >
+                  <span class="btn-wrap">
+                    <span class="text-one">Book appoinment</span>
+                    <span class="text-two">Book appoinment</span>
+                  </span>
+                </a>
+              </div>
+            </div>
+          </div>
         </div>
+      </div>
     </div>
-</div>
-<div class="offcanvas__overlay"></div>
-<div class="offcanvas__overlay-white"></div>
-<!-- Offcanvas area start -->
+    <div class="offcanvas__overlay"></div>
+    <div class="offcanvas__overlay-white"></div>
+    <!-- Offcanvas area start -->
 
-<!-- Header area start -->
-<header>
-    <div class="header-4-top theme-bg-primary">
+    <!-- Header area start -->
+    <header>
+      <div class="header-4-top theme-bg-primary">
         <div class="container">
-            <div class="row">
-                <div class="col-8 d-none d-lg-block">
-                    <div class="header-4-top__menu d-flex">
-                        <a href="https://www.google.com/maps/dir//Deepak+Hospital+33rd+Cross+Rd+7th+Block,+Jayanagar+Bengaluru,+Karnataka+560070/@12.9262302,77.5772763,14z/data=!4m5!4m4!1m0!1m2!1m1!1s0x3bae153fcc638a53:0xcb1f89155d78552c"><i class="fa-solid fa-location-dot"></i> Deepak Hospital</a>
-                        <a href="https://www.google.com/maps/dir//Dermapulse+-+Skin+,+Hair+,+Laser+%26+Cosmetology+Clinic(Dr.+Swathi+Shivakumar)+719%2F25+10th+A+Main+Rd,+4th+Block,+Jayanagar+Bengaluru,+Karnataka+560011/@12.9239812,77.5853672,14z/data=!4m5!4m4!1m0!1m2!1m1!1s0x4a246be3d0ee8329:0x2058e7e997251b07"><i class="fa-solid fa-location-dot"></i> Dermapulse</a>
-                        <a href="tel:9035942513"><i class="fa-solid fa-phone"></i> 9035942513</a>
-                        <!-- <a href="mailto:info@medilix.com"><i class="fa-solid fa-envelope"></i> suhassk2@gmail.com</a> -->
-                    </div>
-                </div>
-                <div class="col-lg-4 col-12">
-                    <div class="header-4-top__menu-social d-flex justify-content-lg-end justify-content-center">
-                        <a href="https://www.facebook.com/"><i class="fab fa-facebook-f"></i></a>
-                        <a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a>
-                        <a href="https://twitter.com/">
-                            <svg width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M10.0596 6.77295L15.8879 -0.00195312H14.5068L9.44607 5.8806L5.40411 -0.00195312H0.742188L6.85442 8.89352L0.742188 15.998H2.12338L7.4676 9.78587L11.7362 15.998H16.3981L10.0593 6.77295H10.0596ZM8.16787 8.97189L7.54857 8.0861L2.62104 1.03779H4.74248L8.71905 6.726L9.33834 7.61179L14.5074 15.0056H12.386L8.16787 8.97223V8.97189Z" fill="white"/>
-                            </svg>
-                        </a>
-                        <a href="https://www.linkedin.com/"><i class="fa-brands fa-linkedin"></i></a>
-                    </div>
-                </div>
+          <div class="row">
+            <div class="col-8 d-none d-lg-block">
+              <div class="header-4-top__menu d-flex">
+                <a
+                  href="https://www.google.com/maps/dir//Deepak+Hospital+33rd+Cross+Rd+7th+Block,+Jayanagar+Bengaluru,+Karnataka+560070/@12.9262302,77.5772763,14z/data=!4m5!4m4!1m0!1m2!1m1!1s0x3bae153fcc638a53:0xcb1f89155d78552c"
+                  ><i class="fa-solid fa-location-dot"></i> Deepak Hospital</a
+                >
+                <a
+                  href="https://www.google.com/maps/dir//Dermapulse+-+Skin+,+Hair+,+Laser+%26+Cosmetology+Clinic(Dr.+Swathi+Shivakumar)+719%2F25+10th+A+Main+Rd,+4th+Block,+Jayanagar+Bengaluru,+Karnataka+560011/@12.9239812,77.5853672,14z/data=!4m5!4m4!1m0!1m2!1m1!1s0x4a246be3d0ee8329:0x2058e7e997251b07"
+                  ><i class="fa-solid fa-location-dot"></i> Dermapulse</a
+                >
+                <a href="tel:9035942513"
+                  ><i class="fa-solid fa-phone"></i> 9035942513</a
+                >
+                <!-- <a href="mailto:info@medilix.com"><i class="fa-solid fa-envelope"></i> suhassk2@gmail.com</a> -->
+              </div>
             </div>
+            <div class="col-lg-4 col-12">
+              <div
+                class="header-4-top__menu-social d-flex justify-content-lg-end justify-content-center"
+              >
+                <a href="https://www.facebook.com/"
+                  ><i class="fab fa-facebook-f"></i
+                ></a>
+                <a href="https://www.instagram.com/"
+                  ><i class="fa-brands fa-instagram"></i
+                ></a>
+                <a href="https://twitter.com/">
+                  <svg
+                    width="17"
+                    height="16"
+                    viewBox="0 0 17 16"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M10.0596 6.77295L15.8879 -0.00195312H14.5068L9.44607 5.8806L5.40411 -0.00195312H0.742188L6.85442 8.89352L0.742188 15.998H2.12338L7.4676 9.78587L11.7362 15.998H16.3981L10.0593 6.77295H10.0596ZM8.16787 8.97189L7.54857 8.0861L2.62104 1.03779H4.74248L8.71905 6.726L9.33834 7.61179L14.5074 15.0056H12.386L8.16787 8.97223V8.97189Z"
+                      fill="white"
+                    />
+                  </svg>
+                </a>
+                <a href="https://www.linkedin.com/"
+                  ><i class="fa-brands fa-linkedin"></i
+                ></a>
+              </div>
+            </div>
+          </div>
         </div>
-    </div>
-    <div id="header-sticky" class="header__area header-4__background header-4">
+      </div>
+      <div
+        id="header-sticky"
+        class="header__area header-4__background header-4"
+      >
         <div class="container">
-            <div class="mega__menu-wrapper p-relative">
-                <div class="header__main">
-                    <div class="header__logo">
-                        <a href="index.html">
-                            <div class="logo">
-                                <img style="width: 200px;" src="assets/imgs/arara.png" alt="logo not found">
+          <div class="mega__menu-wrapper p-relative">
+            <div class="header__main">
+              <div class="header__logo">
+                <a href="index.html">
+                  <div class="logo">
+                    <img
+                      style="width: 200px"
+                      src="assets/imgs/arara.png"
+                      alt="logo not found"
+                    />
+                  </div>
+                </a>
+              </div>
+
+              <div class="mean__menu-wrapper d-none d-lg-block">
+                <div class="main-menu main-menu-3">
+                  <nav id="mobile-menu">
+                    <ul>
+                      <li>
+                        <a style="font-size: 18px" href="index.html">Home</a>
+                      </li>
+                      <li>
+                        <a style="font-size: 18px" href="doctor-details.html"
+                          >Doctor</a
+                        >
+                      </li>
+                      <li class="has-dropdown has-mega-menu">
+                        <a style="font-size: 18px" href="services.html"
+                          >Services</a
+                        >
+                        <ul
+                          style="width: 100%"
+                          class="mega-menu mega-menu-grid-4"
+                        >
+                          <li>
+                            <div
+                              style="padding-top: 10px"
+                              class="home__menu-item"
+                            >
+                              <a
+                                href="general-surgery.html"
+                                style="
+                                  text-align: left;
+                                  font-size: 18px;
+                                  font-weight: 800;
+                                "
+                                class="home__menu-title menuhidderbig"
+                                >General Surgery</a
+                              >
+                              <ul style="margin-top: 10px" class="">
+                                <li>
+                                  <a
+                                    style="font-size: 14px"
+                                    class="menuhiddersmall"
+                                    href="breast-surgery-breast-onco-surgery.html"
+                                    >Breast Surgery & Breast Onco Surgery
+                                  </a>
+                                </li>
+                                <li>
+                                  <a
+                                    style="font-size: 14px"
+                                    class="menuhiddersmall"
+                                    href="thyroid-surgery.html"
+                                    >Thyroid Surgery
+                                  </a>
+                                </li>
+                                <li>
+                                  <a
+                                    style="font-size: 14px"
+                                    class="menuhiddersmall"
+                                    href="piles-fissure-fistula-pilonidal-sinus.html"
+                                    >piles , fissure, fistula & pilonidal
+                                    sinus</a
+                                  >
+                                </li>
+                                <li>
+                                  <a
+                                    style="font-size: 14px"
+                                    class="menuhiddersmall"
+                                    href="amputations-excision-circumcision.html"
+                                    >Amputations , Excision & Circumcision</a
+                                  >
+                                </li>
+                                <li>
+                                  <a
+                                    style="font-size: 14px"
+                                    class="menuhiddersmall"
+                                    href="trauma-emergency-surgery.html"
+                                    >Trauma & Emergency Surgery</a
+                                  >
+                                </li>
+                              </ul>
                             </div>
-                        </a>
-                    </div>
-
-                    <div class="mean__menu-wrapper d-none d-lg-block">
-                        <div class="main-menu main-menu-3">
-                            <nav id="mobile-menu">
-                                <ul>
-                                    <li><a style="font-size: 18px;" href="index.html">Home</a></li>
-                                    <li><a style="font-size: 18px;" href="doctor-details.html">Doctor</a></li>
-                                    <li class="has-dropdown has-mega-menu">
-                                        <a style="font-size: 18px;" href="services.html">Services</a>
-                                        <ul style="width: 100%;" class="mega-menu mega-menu-grid-4">
-                                            <li>
-                                                <div style="padding-top: 10px;" class="home__menu-item">
-                                                    <a href="general-surgery.html" style="text-align: left;font-size: 18px;font-weight: 800;" class="home__menu-title menuhidderbig">General Surgery</a>
-                                                        <ul style="margin-top: 10px;" class="">
-                                                            <li><a style="font-size: 14px;" class="menuhiddersmall"  href="breast-surgery-breast-onco-surgery.html">Breast Surgery & Breast Onco Surgery </a></li>
-                                                            <li><a style="font-size: 14px;" class="menuhiddersmall" href="thyroid-surgery.html">Thyroid Surgery </a></li>
-                                                            <li><a style="font-size: 14px;" class="menuhiddersmall"  href="piles-fissure-fistula-pilonidal-sinus.html">piles , fissure, fistula & pilonidal sinus</a></li>
-                                                            <li><a style="font-size: 14px;" class="menuhiddersmall"  href="amputations-excision-circumcision.html">Amputations , Excision & Circumcision</a></li>
-                                                            <li><a style="font-size: 14px;" class="menuhiddersmall"  href="trauma-emergency-surgery.html">Trauma & Emergency Surgery</a></li>
-                                                        </ul>
-                                                </div>
-                                            </li>
-                                            <li>
-                                                <div style="padding-top: 10px;" class="home__menu-item">
-                                                    <a href="laser-procedures.html" style="text-align: left;font-size: 18px;font-weight: 800;" class="home__menu-title menuhidderbig">Laser Procedures</a>
-                                                        <ul style="margin-top: 10px;" class="">
-                                                            <li><a style="font-size: 14px;" class="menuhiddersmall"  href="laser-treatment-for-fissure.html">Laser treatment for fissure</a></li>
-                                                            <li><a style="font-size: 14px;" class="menuhiddersmall"  href="laser-treatment-for-fistula.html">Laser treatment for fistula</a></li>
-                                                            <li><a style="font-size: 14px;" class="menuhiddersmall"  href="laser-piles-treatment.html">Laser piles treatment</a></li>
-                                                            <li><a style="font-size: 14px;" class="menuhiddersmall"  href="laser-varicose-veins-surgery.html">Laser varicose veins surgery </a></li>
-                                                        </ul>
-                                                        
-                                                </div>
-                                            </li>
-                                            <li>
-                                                <div style="padding-top: 10px;" class="home__menu-item">
-                                                    <a href="laparoscopic-surgery.html" style="text-align: left;font-size: 18px;font-weight: 800;" class="home__menu-title menuhidderbig">Laparoscopic Surgery</a>
-                                                            <ul style="margin-top: 10px;" class="">
-                                                                
-                                                            <li><a style="font-size: 14px;" class="menuhiddersmall"  href="hernia-surgery.html">Hernia Surgery </a></li>
-                                                            <li><a style="font-size: 14px;" class="menuhiddersmall"  href="gallBladder-surgery.html">Gall Bladder Surgery</a></li>
-                                                            <!-- <li><a style="font-size: 14px;" class="menuhiddersmall"  href="varicose-vein-surgery.html">Varicose Vein Surgery</a></li> -->
-                                                            <li><a style="font-size: 14px;" class="menuhiddersmall"  href="gastrointestinal-surgery.html">Gastrointestinal Surgery </a></li>
-                                                            </ul>
-                                                        
-                                                </div>
-                                            </li>
-                                            <li>
-                                                <div style="padding-top: 10px;" class="home__menu-item">
-                                                    <a href="foot-care.html" style="text-align: left;font-size: 18px;font-weight: 800;" class="home__menu-title menuhidderbig">Foot Care</a>
-                                                        <ul style="margin-top: 10px;" class="">
-                                                            <li><a style="font-size: 14px;" class="menuhiddersmall"  href="diabetic-foot-ulcer.html">Diabetic Foot ulcer</a></li>
-                                                            <li><a style="font-size: 14px;" class="menuhiddersmall"  href="gangrene-toes.html">Gangrene Toes</a></li>
-                                                            <li><a style="font-size: 14px;" class="menuhiddersmall"  href="bone-abnormalities.html">Bone Abnormalities</a></li>
-                                                            <li><a style="font-size: 14px;" class="menuhiddersmall"  href="varicose-veins-ulcer.html">Varicose Veins ulcer</a></li>
-                                                            <li><a style="font-size: 14px;" class="menuhiddersmall"  href="nail-abnormalities.html">Nail Abnormalities</a></li>
-                                                            <!-- <li><a style="font-size: 14px;" class="menuhiddersmall"  href="service-details.html">Non-Healing Wounds</a></li> -->
-                                                            <!-- <li><a style="font-size: 14px;" class="menuhiddersmall"  href="service-details.html">Diabetic Neuropathy</a></li> -->
-                                                            <!-- <li><a style="font-size: 14px;" class="menuhiddersmall"  href="service-details.html">Callus/Corn Foot</a></li> -->
-                                                            <!-- <li><a style="font-size: 14px;" class="menuhiddersmall"  href="service-details.html">Chronic Foot Pain</a></li> -->
-                                                        </ul>
-                                                </div>
-                                            </li>
-                                        </ul>
-                                    </li>
-                                    <!-- <li class="has-dropdown active">
+                          </li>
+                          <li>
+                            <div
+                              style="padding-top: 10px"
+                              class="home__menu-item"
+                            >
+                              <a
+                                href="laser-procedures.html"
+                                style="
+                                  text-align: left;
+                                  font-size: 18px;
+                                  font-weight: 800;
+                                "
+                                class="home__menu-title menuhidderbig"
+                                >Laser Procedures</a
+                              >
+                              <ul style="margin-top: 10px" class="">
+                                <li>
+                                  <a
+                                    style="font-size: 14px"
+                                    class="menuhiddersmall"
+                                    href="laser-treatment-for-fissure.html"
+                                    >Laser treatment for fissure</a
+                                  >
+                                </li>
+                                <li>
+                                  <a
+                                    style="font-size: 14px"
+                                    class="menuhiddersmall"
+                                    href="laser-treatment-for-fistula.html"
+                                    >Laser treatment for fistula</a
+                                  >
+                                </li>
+                                <li>
+                                  <a
+                                    style="font-size: 14px"
+                                    class="menuhiddersmall"
+                                    href="laser-piles-treatment.html"
+                                    >Laser piles treatment</a
+                                  >
+                                </li>
+                                <li>
+                                  <a
+                                    style="font-size: 14px"
+                                    class="menuhiddersmall"
+                                    href="laser-varicose-veins-surgery.html"
+                                    >Laser varicose veins surgery
+                                  </a>
+                                </li>
+                              </ul>
+                            </div>
+                          </li>
+                          <li>
+                            <div
+                              style="padding-top: 10px"
+                              class="home__menu-item"
+                            >
+                              <a
+                                href="laparoscopic-surgery.html"
+                                style="
+                                  text-align: left;
+                                  font-size: 18px;
+                                  font-weight: 800;
+                                "
+                                class="home__menu-title menuhidderbig"
+                                >Laparoscopic Surgery</a
+                              >
+                              <ul style="margin-top: 10px" class="">
+                                <li>
+                                  <a
+                                    style="font-size: 14px"
+                                    class="menuhiddersmall"
+                                    href="hernia-surgery.html"
+                                    >Hernia Surgery
+                                  </a>
+                                </li>
+                                <li>
+                                  <a
+                                    style="font-size: 14px"
+                                    class="menuhiddersmall"
+                                    href="gallBladder-surgery.html"
+                                    >Gall Bladder Surgery</a
+                                  >
+                                </li>
+                                <!-- <li><a style="font-size: 14px;" class="menuhiddersmall"  href="varicose-vein-surgery.html">Varicose Vein Surgery</a></li> -->
+                                <li>
+                                  <a
+                                    style="font-size: 14px"
+                                    class="menuhiddersmall"
+                                    href="gastrointestinal-surgery.html"
+                                    >Gastrointestinal Surgery
+                                  </a>
+                                </li>
+                              </ul>
+                            </div>
+                          </li>
+                          <li>
+                            <div
+                              style="padding-top: 10px"
+                              class="home__menu-item"
+                            >
+                              <a
+                                href="foot-care.html"
+                                style="
+                                  text-align: left;
+                                  font-size: 18px;
+                                  font-weight: 800;
+                                "
+                                class="home__menu-title menuhidderbig"
+                                >Foot Care</a
+                              >
+                              <ul style="margin-top: 10px" class="">
+                                <li>
+                                  <a
+                                    style="font-size: 14px"
+                                    class="menuhiddersmall"
+                                    href="diabetic-foot-ulcer.html"
+                                    >Diabetic Foot ulcer</a
+                                  >
+                                </li>
+                                <li>
+                                  <a
+                                    style="font-size: 14px"
+                                    class="menuhiddersmall"
+                                    href="gangrene-toes.html"
+                                    >Gangrene Toes</a
+                                  >
+                                </li>
+                                <li>
+                                  <a
+                                    style="font-size: 14px"
+                                    class="menuhiddersmall"
+                                    href="bone-abnormalities.html"
+                                    >Bone Abnormalities</a
+                                  >
+                                </li>
+                                <li>
+                                  <a
+                                    style="font-size: 14px"
+                                    class="menuhiddersmall"
+                                    href="varicose-veins-ulcer.html"
+                                    >Varicose Veins ulcer</a
+                                  >
+                                </li>
+                                <li>
+                                  <a
+                                    style="font-size: 14px"
+                                    class="menuhiddersmall"
+                                    href="nail-abnormalities.html"
+                                    >Nail Abnormalities</a
+                                  >
+                                </li>
+                                <!-- <li><a style="font-size: 14px;" class="menuhiddersmall"  href="service-details.html">Non-Healing Wounds</a></li> -->
+                                <!-- <li><a style="font-size: 14px;" class="menuhiddersmall"  href="service-details.html">Diabetic Neuropathy</a></li> -->
+                                <!-- <li><a style="font-size: 14px;" class="menuhiddersmall"  href="service-details.html">Callus/Corn Foot</a></li> -->
+                                <!-- <li><a style="font-size: 14px;" class="menuhiddersmall"  href="service-details.html">Chronic Foot Pain</a></li> -->
+                              </ul>
+                            </div>
+                          </li>
+                        </ul>
+                      </li>
+                      <!-- <li class="has-dropdown active">
                                         <a href="javascript:void(0)">Pages</a>
                                         <ul class="submenu">
                                             <li><a href="faq.html">Faq</a></li>
@@ -241,7 +487,7 @@
                                             <li><a href="appoinment.html">Appointment</a></li>
                                         </ul>
                                     </li> -->
-                                    <!-- <li class="has-dropdown">
+                      <!-- <li class="has-dropdown">
                                         <a style="font-size: 18px;" href="services.html">Services</a>
                                         <ul class="submenu">
                                             <li><a style="font-size: 14px;" href="service-details.html">Laparoscopic Surgery Basic and Advanced</a></li>
@@ -258,14 +504,14 @@
                                             <li><a style="font-size: 14px;" href="service-details.html">Trauma & Emergency Surgery</a></li>
                                         </ul>
                                     </li> -->
-                                    <!-- <li class="has-dropdown">
+                      <!-- <li class="has-dropdown">
                                         <a href="doctor.html">Doctor</a>
                                         <ul class="submenu">
                                             <li><a href="doctor.html">Doctor</a></li>
                                             <li><a href="doctor-details.html">Doctor Details</a></li>
                                         </ul>
                                     </li> -->
-                                    <!-- <li class="has-dropdown">
+                      <!-- <li class="has-dropdown">
                                         <a href="portfolio.html">Portfolio</a>
                                         <ul class="submenu">
                                             <li><a href="portfolio.html">Portfolio</a></li>
@@ -279,17 +525,29 @@
                                             <li><a href="blog-details.html">Blog Details</a></li>
                                         </ul>
                                     </li> -->
-                                    <li><a style="font-size: 18px;" href="gallery.html">Gallery</a></li>
-                                    <li><a style="font-size: 18px;" href="blog-details.html">Blog</a></li>
-                                    <li><a style="font-size: 18px;" href="contact.html">contact</a></li>
-                                </ul>
-                            </nav>
-                        </div>
-                    </div>
+                      <li>
+                        <a style="font-size: 18px" href="gallery.html"
+                          >Gallery</a
+                        >
+                      </li>
+                      <li>
+                        <a style="font-size: 18px" href="blog-details.html"
+                          >Blog</a
+                        >
+                      </li>
+                      <li>
+                        <a style="font-size: 18px" href="contact.html"
+                          >contact</a
+                        >
+                      </li>
+                    </ul>
+                  </nav>
+                </div>
+              </div>
 
-                    <div class="header__right">
-                        <div class="header__action d-flex align-items-center">
-                            <!-- <div class="header__btn-wrap d-none d-sm-inline-flex">
+              <div class="header__right">
+                <div class="header__action d-flex align-items-center">
+                  <!-- <div class="header__btn-wrap d-none d-sm-inline-flex">
                                 <div class="rr-header-icon-search">
                                     <button class="search-open-btn">
                                         <i class="fa-solid fa-magnifying-glass"></i>
@@ -297,118 +555,274 @@
                                 </div>
                             </div> -->
 
-                            <div class="header__hamburger">
-                                <div class="sidebar__toggle">
-                                    <a class="bar-icon" href="javascript:void(0)">
-                                        <span></span>
-                                        <span></span>
-                                        <span></span>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
+                  <div class="header__hamburger">
+                    <div class="sidebar__toggle">
+                      <a class="bar-icon" href="javascript:void(0)">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                      </a>
                     </div>
+                  </div>
                 </div>
+              </div>
             </div>
+          </div>
         </div>
-    </div>
-</header>
-<!-- Header area end -->
+      </div>
+    </header>
+    <!-- Header area end -->
 
-<!-- Body main wrapper start -->
-<main>
-
-    <!-- Breadcrumb area start  -->
-    <div class="breadcrumb__area header__background-color breadcrumb__header-up breadcrumb-space overly overflow-hidden">
-        <div class="breadcrumb__background" data-background="./assets/imgs/aa25.jpg"></div>
+    <!-- Body main wrapper start -->
+    <main>
+      <!-- Breadcrumb area start  -->
+      <div
+        class="breadcrumb__area header__background-color breadcrumb__header-up breadcrumb-space overly overflow-hidden"
+      >
+        <div
+          class="breadcrumb__background"
+          data-background="./assets/imgs/aa25.jpg"
+        ></div>
         <div class="container">
-            <div class="row align-items-center justify-content-between">
-                <div class="col-12">
-                    <div class="breadcrumb__content text-center">
-                        <h2 class="breadcrumb__title mb-15 mb-sm-10 mb-xs-5 color-white title-animation">Laparoscopic Surgery Basic and Advanced</h2>
+          <div class="row align-items-center justify-content-between">
+            <div class="col-12">
+              <div class="breadcrumb__content text-center">
+                <h2
+                  class="breadcrumb__title mb-15 mb-sm-10 mb-xs-5 color-white title-animation"
+                >
+                  Laparoscopic Surgery Basic and Advanced
+                </h2>
 
-                        <div class="breadcrumb__menu">
-                            <nav>
-                                <ul>
-                                    <li><span><a href="index.html">Home</a></span></li>
-                                    <li class="active"><span>Laparoscopic Surgery Basic and Advanced</span></li>
-                                </ul>
-                            </nav>
-                        </div>
-                    </div>
+                <div class="breadcrumb__menu">
+                  <nav>
+                    <ul>
+                      <li>
+                        <span><a href="index.html">Home</a></span>
+                      </li>
+                      <li class="active">
+                        <span>Laparoscopic Surgery Basic and Advanced</span>
+                      </li>
+                    </ul>
+                  </nav>
                 </div>
+              </div>
             </div>
+          </div>
         </div>
-    </div>
-    <!-- Breadcrumb area start  -->
+      </div>
+      <!-- Breadcrumb area start  -->
 
-    <section class="service-details section-space">
+      <section class="service-details section-space">
         <div class="container">
-            <div class="row flex-xl-row flex-column-reverse">
-                <div class="col-xl-4">
-                    <div class="sidebar sidebar-rr-sticky">
-                        <div style="gap: 14px;" class="sidebar__widget-service mb-30">
-                            <a style="font-size: 15px;line-height: 18px;" href="breast-surgery-breast-onco-surgery.html">Breast Surgery & Breast Onco Surgery <i class="fa-solid fa-plus"></i></a>
-                            <a style="font-size: 15px;line-height: 18px;" href="thyroid-surgery.html">Thyroid Surgery <i class="fa-solid fa-plus"></i></a>
-                            <a style="font-size: 15px;line-height: 18px;" href="piles-fissure-fistula-pilonidal-sinus.html">piles , fissure, fistula & pilonidal sinus  <i class="fa-solid fa-plus"></i></a>
-                            <a style="font-size: 15px;line-height: 18px;" href="amputations-excision-circumcision.html">Amputations , Excision & Circumcision <i class="fa-solid fa-plus"></i></a>
-                            <a style="font-size: 16px;line-height: 18px;" href="trauma-emergency-surgery.html">Trauma & Emergency Surgery <i class="fa-solid fa-plus"></i></a>
-                            <a style="font-size: 15px;line-height: 18px;" href="laser-treatment-for-fissure.html">Laser treatment for fissure  <i class="fa-solid fa-plus"></i></a>
-                            <a style="font-size: 15px;line-height: 18px;" href="laser-treatment-for-fistula.html">Laser treatment for fistula <i class="fa-solid fa-plus"></i></a>
-                            <a style="font-size: 15px;line-height: 18px;" href="laser-piles-treatment.html">Laser piles treatment <i class="fa-solid fa-plus"></i></a>
-                            <a style="font-size: 15px;line-height: 18px;" href="laser-varicose-veins-surgery.html">Laser varicose veins surgery <i class="fa-solid fa-plus"></i></a>
-                            <a style="font-size: 15px;line-height: 18px;" href="hernia-surgery.html">Hernia Surgery <i class="fa-solid fa-plus"></i></a>
-                            <a style="font-size: 15px;line-height: 18px;" href="gallBladder-surgery.html">Gall Bladder Surgery <i class="fa-solid fa-plus"></i></a>
-                            <a style="font-size: 15px;line-height: 18px;" href="varicose-vein-surgery.html">Varicose Vein Surgery  <i class="fa-solid fa-plus"></i></a>
-                            <a style="font-size: 15px;line-height: 18px;" href="gastrointestinal-surgery.html">Gastrointestinal Surgery  <i class="fa-solid fa-plus"></i></a>
-                            <a style="font-size: 15px;line-height: 18px;" href="diabetic-foot-ulcer.html">Diabetic Foot ulcer <i class="fa-solid fa-plus"></i></a>
-                            <a style="font-size: 15px;line-height: 18px;" href="gangrene-toes.html">Gangrene Toes <i class="fa-solid fa-plus"></i></a>
-                            <a style="font-size: 15px;line-height: 18px;" href="bone-abnormalities.html">Bone Abnormalities <i class="fa-solid fa-plus"></i></a>
-                            <a style="font-size: 15px;line-height: 18px;" href="varicose-veins-ulcer.html">Varicose Veins ulcer  <i class="fa-solid fa-plus"></i></a>
-                            <a style="font-size: 15px;line-height: 18px;" href="nail-abnormalities.html">Nail Abnormalities  <i class="fa-solid fa-plus"></i></a>
-                        </div>
-
-                        <div class="sidebar__widget-contact__service text-center">
-                            <h4 class="mb-25 title-animation text-capitalize">Contact us for prompt assistance.</h4>
-                            <p class="mb-20"><a href="tel:9035942513"><i class="fa-solid fa-phone"></i>9035942513</a></p>
-
-                            <a href="https://api.whatsapp.com/send/?phone=%2B919035942513&text=Hello" class="rr-btn">
-                                <span class="btn-wrap">
-                                    <span class="text-one">Book Appointment <i class="fa-solid fa-plus"></i></span>
-                                    <span class="text-two">Book Appointment <i class="fa-solid fa-plus"></i></span>
-                                </span>
-                            </a>
-            </div>
-                    </div>
+          <div class="row flex-xl-row flex-column-reverse">
+            <div class="col-xl-4">
+              <div class="sidebar sidebar-rr-sticky">
+                <div style="gap: 14px" class="sidebar__widget-service mb-30">
+                  <a
+                    style="font-size: 15px; line-height: 18px"
+                    href="breast-surgery-breast-onco-surgery.html"
+                    >Breast Surgery & Breast Onco Surgery
+                    <i class="fa-solid fa-plus"></i
+                  ></a>
+                  <a
+                    style="font-size: 15px; line-height: 18px"
+                    href="thyroid-surgery.html"
+                    >Thyroid Surgery <i class="fa-solid fa-plus"></i
+                  ></a>
+                  <a
+                    style="font-size: 15px; line-height: 18px"
+                    href="piles-fissure-fistula-pilonidal-sinus.html"
+                    >piles , fissure, fistula & pilonidal sinus
+                    <i class="fa-solid fa-plus"></i
+                  ></a>
+                  <a
+                    style="font-size: 15px; line-height: 18px"
+                    href="amputations-excision-circumcision.html"
+                    >Amputations , Excision & Circumcision
+                    <i class="fa-solid fa-plus"></i
+                  ></a>
+                  <a
+                    style="font-size: 16px; line-height: 18px"
+                    href="trauma-emergency-surgery.html"
+                    >Trauma & Emergency Surgery <i class="fa-solid fa-plus"></i
+                  ></a>
+                  <a
+                    style="font-size: 15px; line-height: 18px"
+                    href="laser-treatment-for-fissure.html"
+                    >Laser treatment for fissure <i class="fa-solid fa-plus"></i
+                  ></a>
+                  <a
+                    style="font-size: 15px; line-height: 18px"
+                    href="laser-treatment-for-fistula.html"
+                    >Laser treatment for fistula <i class="fa-solid fa-plus"></i
+                  ></a>
+                  <a
+                    style="font-size: 15px; line-height: 18px"
+                    href="laser-piles-treatment.html"
+                    >Laser piles treatment <i class="fa-solid fa-plus"></i
+                  ></a>
+                  <a
+                    style="font-size: 15px; line-height: 18px"
+                    href="laser-varicose-veins-surgery.html"
+                    >Laser varicose veins surgery
+                    <i class="fa-solid fa-plus"></i
+                  ></a>
+                  <a
+                    style="font-size: 15px; line-height: 18px"
+                    href="hernia-surgery.html"
+                    >Hernia Surgery <i class="fa-solid fa-plus"></i
+                  ></a>
+                  <a
+                    style="font-size: 15px; line-height: 18px"
+                    href="gallBladder-surgery.html"
+                    >Gall Bladder Surgery <i class="fa-solid fa-plus"></i
+                  ></a>
+                  <a
+                    style="font-size: 15px; line-height: 18px"
+                    href="varicose-vein-surgery.html"
+                    >Varicose Vein Surgery <i class="fa-solid fa-plus"></i
+                  ></a>
+                  <a
+                    style="font-size: 15px; line-height: 18px"
+                    href="gastrointestinal-surgery.html"
+                    >Gastrointestinal Surgery <i class="fa-solid fa-plus"></i
+                  ></a>
+                  <a
+                    style="font-size: 15px; line-height: 18px"
+                    href="diabetic-foot-ulcer.html"
+                    >Diabetic Foot ulcer <i class="fa-solid fa-plus"></i
+                  ></a>
+                  <a
+                    style="font-size: 15px; line-height: 18px"
+                    href="gangrene-toes.html"
+                    >Gangrene Toes <i class="fa-solid fa-plus"></i
+                  ></a>
+                  <a
+                    style="font-size: 15px; line-height: 18px"
+                    href="bone-abnormalities.html"
+                    >Bone Abnormalities <i class="fa-solid fa-plus"></i
+                  ></a>
+                  <a
+                    style="font-size: 15px; line-height: 18px"
+                    href="varicose-veins-ulcer.html"
+                    >Varicose Veins ulcer <i class="fa-solid fa-plus"></i
+                  ></a>
+                  <a
+                    style="font-size: 15px; line-height: 18px"
+                    href="nail-abnormalities.html"
+                    >Nail Abnormalities <i class="fa-solid fa-plus"></i
+                  ></a>
                 </div>
-                <div class="col-xl-8">
-                    <div class="service-details__content">
-                        <div style="display: flex;justify-content: center;" class="service-details__content-media mb-20">
-                            <img style="width: 80%;" src="./assets/imgs/aa26.jpg" class="img-fluid" alt="img not found">
-                        </div>
 
-                        <h2 style="font-size: 32px;line-height: 45px;" class="title-animation mb-20">Laparoscopic Surgery Basic and Advanced </h2>
+                <div class="sidebar__widget-contact__service text-center">
+                  <h4 class="mb-25 title-animation text-capitalize">
+                    Contact us for prompt assistance.
+                  </h4>
+                  <p class="mb-20">
+                    <a href="tel:9035942513"
+                      ><i class="fa-solid fa-phone"></i>9035942513</a
+                    >
+                  </p>
 
-                        <p>Welcome to the website of Dr. Suhas S Kumar, a dedicated and experienced surgeon specializing in both basic and advanced laparoscopic surgery techniques. With over 8 years of expertise, Dr. Kumar provides exceptional care by utilizing minimally invasive methods to ensure the best outcomes for his patients. Currently serving as a General Surgeon and Assistant Professor at St. St Johns Medical College Hospital in Bangalore, Dr. Kumar is committed to advancing surgical practices and educating future surgeons.</p>
+                  <a
+                    href="https://api.whatsapp.com/send/?phone=%2B919035942513&text=Hello"
+                    class="rr-btn"
+                  >
+                    <span class="btn-wrap">
+                      <span class="text-one"
+                        >Book Appointment <i class="fa-solid fa-plus"></i
+                      ></span>
+                      <span class="text-two"
+                        >Book Appointment <i class="fa-solid fa-plus"></i
+                      ></span>
+                    </span>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="col-xl-8">
+              <div class="service-details__content">
+                <div
+                  style="display: flex; justify-content: center"
+                  class="service-details__content-media mb-20"
+                >
+                  <img
+                    style="width: 80%"
+                    src="./assets/imgs/aa26.jpg"
+                    class="img-fluid"
+                    alt="img not found"
+                  />
+                </div>
 
-<p>Dr. Kumar performs a variety of basic laparoscopic procedures, including diagnostic laparoscopy to examine internal organs, appendectomies for appendix removal, cholecystectomies for gallbladder removal, and hernia repairs using mesh placement. These procedures offer numerous benefits such as reduced pain, shorter hospital stays, and faster recovery times compared to traditional open surgeries.</p>
+                <h2
+                  style="font-size: 32px; line-height: 45px"
+                  class="title-animation mb-20"
+                >
+                  Laparoscopic Surgery Basic and Advanced
+                </h2>
 
-<p>In addition to basic procedures, Dr. Kumar excels in advanced laparoscopic surgeries. These include colectomies for colon removal and laparoscopic cancer surgeries for tumor removal. His advanced skills ensure precise and effective treatments, minimizing patient discomfort and promoting quicker recoveries.</p>
+                <p>
+                  Welcome to the website of Dr. Suhas S Kumar, a dedicated and
+                  experienced surgeon specializing in both basic and advanced
+                  laparoscopic surgery techniques. With over 8 years of
+                  expertise, Dr. Kumar provides exceptional care by utilizing
+                  minimally invasive methods to ensure the best outcomes for his
+                  patients. Currently serving as a General Surgeon and Assistant
+                  Professor at St. St Johns Medical College Hospital in
+                  Bangalore, Dr. Kumar is committed to advancing surgical
+                  practices and educating future surgeons.
+                </p>
 
-<p>Dr. Kumar's expertise in laparoscopic surgery is complemented by his commitment to continuous learning and innovation. By staying at the forefront of surgical advancements, he provides his patients with the most modern and effective treatment options. His dedication to minimally invasive techniques ensures that patients receive the highest quality care with optimal results.</p>
+                <p>
+                  Dr. Kumar performs a variety of basic laparoscopic procedures,
+                  including diagnostic laparoscopy to examine internal organs,
+                  appendectomies for appendix removal, cholecystectomies for
+                  gallbladder removal, and hernia repairs using mesh placement.
+                  These procedures offer numerous benefits such as reduced pain,
+                  shorter hospital stays, and faster recovery times compared to
+                  traditional open surgeries.
+                </p>
 
-<p>Explore Dr. Suhas S Kumar's website to learn more about his services, treatment options, and patient care philosophy. Whether you are seeking information on basic laparoscopic procedures or advanced surgical techniques, Dr. Kumar's extensive knowledge and experience make him a trusted choice for your surgical needs. Contact us today to schedule a consultation and experience the benefits of expert laparoscopic care.</p>
-                        <!-- <ul class="mb-40">
+                <p>
+                  In addition to basic procedures, Dr. Kumar excels in advanced
+                  laparoscopic surgeries. These include colectomies for colon
+                  removal and laparoscopic cancer surgeries for tumor removal.
+                  His advanced skills ensure precise and effective treatments,
+                  minimizing patient discomfort and promoting quicker
+                  recoveries.
+                </p>
+
+                <p>
+                  Dr. Kumar's expertise in laparoscopic surgery is complemented
+                  by his commitment to continuous learning and innovation. By
+                  staying at the forefront of surgical advancements, he provides
+                  his patients with the most modern and effective treatment
+                  options. His dedication to minimally invasive techniques
+                  ensures that patients receive the highest quality care with
+                  optimal results.
+                </p>
+
+                <p>
+                  Explore Dr. Suhas S Kumar's website to learn more about his
+                  services, treatment options, and patient care philosophy.
+                  Whether you are seeking information on basic laparoscopic
+                  procedures or advanced surgical techniques, Dr. Kumar's
+                  extensive knowledge and experience make him a trusted choice
+                  for your surgical needs. Contact us today to schedule a
+                  consultation and experience the benefits of expert
+                  laparoscopic care.
+                </p>
+                <!-- <ul class="mb-40">
                             <li><span><i class="fa-solid fa-check"></i></span> <h5>Lorem Ipsum passage, and going through</h5></li>
                             <li><span><i class="fa-solid fa-check"></i></span> <h5>Healthcare Excellence, Compassionate Healing</h5></li>
                             <li><span><i class="fa-solid fa-check"></i></span> <h5>Many desktop publishing packages and web page</h5></li>
                         </ul> -->
 
-                        <!-- <h3 class="title-animation mb-10">Thrive Trail Guiding Your Journey to Wellnes</h3> -->
+                <!-- <h3 class="title-animation mb-10">Thrive Trail Guiding Your Journey to Wellnes</h3> -->
 
-                        <!-- <p class="mb-30">Web designing in a powerful way of just not an only professions, however, in a passion for our Company. We have to a tendency to believe the idea that smart looking of any websitet in on visitors.Web designing in a powerful way of just not an only profession Web designing in a powerful way of just not an only </p> -->
+                <!-- <p class="mb-30">Web designing in a powerful way of just not an only professions, however, in a passion for our Company. We have to a tendency to believe the idea that smart looking of any websitet in on visitors.Web designing in a powerful way of just not an only profession Web designing in a powerful way of just not an only </p> -->
 
-                        <!-- <div class="row">
+                <!-- <div class="row">
                             <div class="col-lg-7">
                                 <div class="service-details__content-media-item service-details__content-media-item-1">
                                     <div class="service-details__content-media-item_img mb-10">
@@ -428,244 +842,435 @@
                                 </div>
                             </div>
                         </div> -->
-                    </div>
-                </div>
+              </div>
             </div>
+          </div>
         </div>
-    </section>
+      </section>
+    </main>
+    <!-- Body main wrapper end -->
 
-</main>
-<!-- Body main wrapper end -->
-
-<section class="footer__cta footer__cta-bottom-up theme-bg-1">
-    <div class="container">
+    <section class="footer__cta footer__cta-bottom-up theme-bg-1">
+      <div class="container">
         <div class="row mb-minus-30">
-            <div class="col-md-6">
-                <div class="footer__cta-item mb-30 theme-bg-primary d-flex flex-lg-row flex-column align-items-lg-center">
-                    <div class="footer__cta-item-icon d-flex align-items-center justify-content-center">
-                        <img style="width: 80px;padding: 15px;" class="img-fluid" src="assets/imgs/aa22.png" alt="icon not found">
-                    </div>
+          <div class="col-md-6">
+            <div
+              class="footer__cta-item mb-30 theme-bg-primary d-flex flex-lg-row flex-column align-items-lg-center"
+            >
+              <div
+                class="footer__cta-item-icon d-flex align-items-center justify-content-center"
+              >
+                <img
+                  style="width: 80px; padding: 15px"
+                  class="img-fluid"
+                  src="assets/imgs/aa22.png"
+                  alt="icon not found"
+                />
+              </div>
 
-                    <div class="footer__cta-item-text">
-                        <h4 class="color-white mb-15 mb-10">Contact us via call.</h4>
-                        <p class="color-white mb-0">
-                            Please contact us with your question and needs, our team
-                            would be delighted to assist you promptly</p>
-                    </div>
-                </div>
+              <div class="footer__cta-item-text">
+                <h4 class="color-white mb-15 mb-10">Contact us via call.</h4>
+                <p class="color-white mb-0">
+                  Please contact us with your question and needs, our team would
+                  be delighted to assist you promptly
+                </p>
+              </div>
             </div>
+          </div>
 
-            <div class="col-md-6">
-                <div class="footer__cta-item mb-30 theme-bg-glow d-flex flex-lg-row flex-column align-items-lg-center">
-                    <div class="footer__cta-item-icon d-flex align-items-center justify-content-center">
-                        <img style="width: 80px;padding: 15px;" class="img-fluid" src="assets/imgs/whatsapp.png" alt="icon not found">
-                    </div>
+          <div class="col-md-6">
+            <div
+              class="footer__cta-item mb-30 theme-bg-glow d-flex flex-lg-row flex-column align-items-lg-center"
+            >
+              <div
+                class="footer__cta-item-icon d-flex align-items-center justify-content-center"
+              >
+                <img
+                  style="width: 80px; padding: 15px"
+                  class="img-fluid"
+                  src="assets/imgs/whatsapp.png"
+                  alt="icon not found"
+                />
+              </div>
 
-                    <div class="footer__cta-item-text">
-                        <h4 class="color-white mb-15 mb-10">Contact us via whatsapp.</h4>
-                        <p class="color-white mb-0">Please reach out to us with your questions and requirements; our team will be happy to assist you swiftly.</p>
-                    </div>
-                </div>
+              <div class="footer__cta-item-text">
+                <h4 class="color-white mb-15 mb-10">
+                  Contact us via whatsapp.
+                </h4>
+                <p class="color-white mb-0">
+                  Please reach out to us with your questions and requirements;
+                  our team will be happy to assist you swiftly.
+                </p>
+              </div>
             </div>
+          </div>
         </div>
-    </div>
-</section>
-<!-- Footer area start -->
-<footer>
-    <section style="padding-top: 130px;" class="footer-2__area-common theme-bg-color-900 overflow-hidden" data-background="assets/imgs/footer-2/background.png">
+      </div>
+    </section>
+    <!-- Footer area start -->
+    <footer>
+      <section
+        style="padding-top: 130px"
+        class="footer-2__area-common theme-bg-color-900 overflow-hidden"
+        data-background="assets/imgs/footer-2/background.png"
+      >
         <div class="container">
-            <div class="row mb-minus-50">
-                <div class="col-lg-3 col-md-6">
-                    <div class="footer-2__widget footer-2__widget-item-1">
-                        <div class="footer-2__logo mb-30 mb-xs-25">
-                            <a style="padding: 18px 0px;width: 100%;display: flex;justify-content: center;background-color: white;border-radius: 10px;" href="index.html">
-                                
-                                <img style="width: 250px;" src="assets/imgs/arara.png" alt="logo not found">
-                            </a>
-                        </div>
-
-                        <div class="footer-2__content">
-                            <p class="mb-0">Suhas S. Kumar is an experienced General Surgeon and Professor, specializing in advanced laparoscopic surgical techniques.</p>
-                        </div>
-
-                        <div class="footer-2__social mt-30 mt-xs-30">
-                            <a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a>
-                            <a href="https://www.facebook.com/"><i class="fab fa-facebook-f"></i></a>
-                            <a href="https://twitter.com/">
-                                <svg width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M10.0596 6.77295L15.8879 -0.00195312H14.5068L9.44607 5.8806L5.40411 -0.00195312H0.742188L6.85442 8.89352L0.742188 15.998H2.12338L7.4676 9.78587L11.7362 15.998H16.3981L10.0593 6.77295H10.0596ZM8.16787 8.97189L7.54857 8.0861L2.62104 1.03779H4.74248L8.71905 6.726L9.33834 7.61179L14.5074 15.0056H12.386L8.16787 8.97223V8.97189Z" fill="white"/>
-                                </svg>
-                            </a>
-                            <a href="https://www.linkedin.com/"><i class="fa-brands fa-linkedin-in"></i></a>
-                        </div>
-                    </div>
+          <div class="row mb-minus-50">
+            <div class="col-lg-3 col-md-6">
+              <div class="footer-2__widget footer-2__widget-item-1">
+                <div class="footer-2__logo mb-30 mb-xs-25">
+                  <a
+                    style="
+                      padding: 18px 0px;
+                      width: 100%;
+                      display: flex;
+                      justify-content: center;
+                      background-color: white;
+                      border-radius: 10px;
+                    "
+                    href="index.html"
+                  >
+                    <img
+                      style="width: 250px"
+                      src="assets/imgs/arara.png"
+                      alt="logo not found"
+                    />
+                  </a>
                 </div>
 
-                <div class="col-lg-2 col-6">
-                    <div class="footer-2__widget footer-2__widget-item-2">
-                        <div class="footer-2__widget-title">
-                            <h4>Services</h4>
-                        </div>
-                        <div class="footer-2__link">
-                            <ul>
-                                <li><a href="gastrointestinal-surgery.html">Gastrointestinal Surgery
-                                </a></li>
-                                <li><a href="hernia-surgery.html">Hernia Surgery</a></li>
-                                <li><a href="gallBladder-surgery.html">Gall Bladder Surgery</a></li>
-                                <li><a href="piles-fissure-fistula-pilonidal-sinus.html">Piles surgery </a></li>
-                                <li><a href="diabetic-foot-ulcer.html">Diabetic Foot Surgery </a></li>
-                            </ul>
-                        </div>
-                    </div>
+                <div class="footer-2__content">
+                  <p class="mb-0">
+                    Suhas S. Kumar is an experienced General Surgeon and
+                    Professor, specializing in advanced laparoscopic surgical
+                    techniques.
+                  </p>
                 </div>
 
-                <div class="col-lg-3 col-6">
-                    <div class="footer-2__widget footer-2__widget-item-3">
-                        <div class="footer-2__widget-title">
-                            <h4>Address</h4>
-                        </div>
-
-                        <div class="footer-2__link footer-2__link-location">
-                            <ul>
-                                <!-- <li><a href="mailto:suhassk2@gmail.com"><i class="fa-solid fa-envelope"></i> suhassk2@gmail.com</a></li> -->
-                                <li><a href="https://www.google.com/maps/place/Deepak+Hospital/@12.9262302,77.5772763,15z/data=!4m6!3m5!1s0x3bae153fcc638a53:0xcb1f89155d78552c!8m2!3d12.9262302!4d77.5772763!16s%2Fg%2F11f7gpg88b?entry=ttu"><i class="fa-solid fa-location-dot"></i> <p style="color: white;margin-bottom: 0px;"><b>(Deepak Hospital) </b>33rd Cross Rd, 7th Block, Jayanagar, Bengaluru, Karnataka 560070</p></a></li>
-                                <li><a href="https://www.google.com/maps/place/Dermapulse+-+Skin+,+Hair+,+Laser+%26+Cosmetology+Clinic(Dr.+Swathi+Shivakumar)/@12.9239812,77.5853672,15z/data=!4m6!3m5!1s0x4a246be3d0ee8329:0x2058e7e997251b07!8m2!3d12.9239812!4d77.5853672!16s%2Fg%2F11y5w238fm?entry=ttu"><i class="fa-solid fa-location-dot"></i> <p style="color: white;margin-bottom: 0px;"><b>(Dermapulse Clinic) </b>719/25, 10th A Main Rd, 4th Block, Jayanagar, Bengaluru, Karnataka 560011</p></a></li>
-                            </ul>
-                        </div>
-                    </div>
+                <div class="footer-2__social mt-30 mt-xs-30">
+                  <a href="https://www.instagram.com/"
+                    ><i class="fa-brands fa-instagram"></i
+                  ></a>
+                  <a href="https://www.facebook.com/"
+                    ><i class="fab fa-facebook-f"></i
+                  ></a>
+                  <a href="https://twitter.com/">
+                    <svg
+                      width="17"
+                      height="16"
+                      viewBox="0 0 17 16"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M10.0596 6.77295L15.8879 -0.00195312H14.5068L9.44607 5.8806L5.40411 -0.00195312H0.742188L6.85442 8.89352L0.742188 15.998H2.12338L7.4676 9.78587L11.7362 15.998H16.3981L10.0593 6.77295H10.0596ZM8.16787 8.97189L7.54857 8.0861L2.62104 1.03779H4.74248L8.71905 6.726L9.33834 7.61179L14.5074 15.0056H12.386L8.16787 8.97223V8.97189Z"
+                        fill="white"
+                      />
+                    </svg>
+                  </a>
+                  <a href="https://www.linkedin.com/"
+                    ><i class="fa-brands fa-linkedin-in"></i
+                  ></a>
                 </div>
-
-                <div class="col-lg-4 col-md-6">
-                    <div class="footer-2__widget footer-2__widget-item-4">
-                        <div class="footer-2__widget-title">
-                            <h4>Book Appoitment</h4>
-                        </div>
-
-                        <div class="footer-2__subscribe-content">
-                            <p class="mb-30 mb-xs-25 color-white">Feel free to contact us with any questions or needs; our team will be happy to assist you promptly and efficiently via email.</p>
-
-                            <div class="footer-2__subscribe d-flex mt-30 mt-xs-25">
-                                <input type="text" placeholder="Enter Email">
-                                <button type="submit" class="rr-btn rr-btn__theme">
-                                <span class="btn-wrap">
-                                    <span class="text-one">Contact Us</span>
-                                    <span class="text-two">Contact Us</span>
-                                </span>
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+              </div>
             </div>
+
+            <div class="col-lg-2 col-6">
+              <div class="footer-2__widget footer-2__widget-item-2">
+                <div class="footer-2__widget-title">
+                  <h4>Services</h4>
+                </div>
+                <div class="footer-2__link">
+                  <ul>
+                    <li>
+                      <a href="gastrointestinal-surgery.html"
+                        >Gastrointestinal Surgery
+                      </a>
+                    </li>
+                    <li><a href="hernia-surgery.html">Hernia Surgery</a></li>
+                    <li>
+                      <a href="gallBladder-surgery.html"
+                        >Gall Bladder Surgery</a
+                      >
+                    </li>
+                    <li>
+                      <a href="piles-fissure-fistula-pilonidal-sinus.html"
+                        >Piles surgery
+                      </a>
+                    </li>
+                    <li>
+                      <a href="diabetic-foot-ulcer.html"
+                        >Diabetic Foot Surgery
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-3 col-6">
+              <div class="footer-2__widget footer-2__widget-item-3">
+                <div class="footer-2__widget-title">
+                  <h4>Address</h4>
+                </div>
+
+                <div class="footer-2__link footer-2__link-location">
+                  <ul>
+                    <!-- <li><a href="mailto:suhassk2@gmail.com"><i class="fa-solid fa-envelope"></i> suhassk2@gmail.com</a></li> -->
+                    <li>
+                      <a
+                        href="https://www.google.com/maps/place/Deepak+Hospital/@12.9262302,77.5772763,15z/data=!4m6!3m5!1s0x3bae153fcc638a53:0xcb1f89155d78552c!8m2!3d12.9262302!4d77.5772763!16s%2Fg%2F11f7gpg88b?entry=ttu"
+                        ><i class="fa-solid fa-location-dot"></i>
+                        <p style="color: white; margin-bottom: 0px">
+                          <b>(Deepak Hospital) </b>33rd Cross Rd, 7th Block,
+                          Jayanagar, Bengaluru, Karnataka 560070
+                        </p></a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="https://www.google.com/maps/place/Dermapulse+-+Skin+,+Hair+,+Laser+%26+Cosmetology+Clinic(Dr.+Swathi+Shivakumar)/@12.9239812,77.5853672,15z/data=!4m6!3m5!1s0x4a246be3d0ee8329:0x2058e7e997251b07!8m2!3d12.9239812!4d77.5853672!16s%2Fg%2F11y5w238fm?entry=ttu"
+                        ><i class="fa-solid fa-location-dot"></i>
+                        <p style="color: white; margin-bottom: 0px">
+                          <b>(Dermapulse Clinic) </b>719/25, 10th A Main Rd, 4th
+                          Block, Jayanagar, Bengaluru, Karnataka 560011
+                        </p></a
+                      >
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6">
+              <div class="footer-2__widget footer-2__widget-item-4">
+                <div class="footer-2__widget-title">
+                  <h4>Book Appoitment</h4>
+                </div>
+
+                <div class="footer-2__subscribe-content">
+                  <p class="mb-30 mb-xs-25 color-white">
+                    Feel free to contact us with any questions or needs; our
+                    team will be happy to assist you promptly and efficiently
+                    via email.
+                  </p>
+
+                  <div class="footer-2__subscribe d-flex mt-30 mt-xs-25">
+                    <input type="text" placeholder="Enter Email" />
+                    <button type="submit" class="rr-btn rr-btn__theme">
+                      <span class="btn-wrap">
+                        <span class="text-one">Contact Us</span>
+                        <span class="text-two">Contact Us</span>
+                      </span>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
 
         <div class="footer-2__bottom-wrapper">
-            <div class="container">
-                <div class="footer-2__bottom">
-                    <div class="row">
-                        <div class="col-lg-6">
-                            <div class="footer-2__copyright text-lg-start text-center">
-                                <p class="mb-0">© <a href="index.html">Appaddindia</a>  2024 | All Rights Reserved</p>
-                            </div>
-                        </div>
-
-                        <div class="col-lg-6">
-                            <div class="footer-2__copyright-menu">
-                                <ul>
-                                    <li><a href="doctor-details.html">About Us</a></li>
-                                    <li><a href="contact.html">Contact Us</a></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
+          <div class="container">
+            <div class="footer-2__bottom">
+              <div class="row">
+                <div class="col-lg-6">
+                  <div class="footer-2__copyright text-lg-start text-center">
+                    <p class="mb-0">
+                      © <a href="index.html">Appaddindia</a> 2024 | All Rights
+                      Reserved
+                    </p>
+                  </div>
                 </div>
+
+                <div class="col-lg-6">
+                  <div class="footer-2__copyright-menu">
+                    <ul>
+                      <li><a href="doctor-details.html">About Us</a></li>
+                      <li><a href="contact.html">Contact Us</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
             </div>
+          </div>
         </div>
-    </section>
-</footer>
-<!-- Footer area end -->
+      </section>
+    </footer>
+    <!-- Footer area end -->
 
-<!-- JS here --><div class="small" style="position: fixed;bottom: 0px;z-index: 999;width: 100%;">
-    <div class="row">
-        <div style="background-color: #36407d;padding:18px 3px;" class="col-3">
-            <a style="width: 100%;" href="tel:9035942513">
-                <div style="display: flex;justify-content: center;">
-                    <svg style="width: 20px;margin-bottom: 8px;" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path fill="#246bfd" d="M164.9 24.6c-7.7-18.6-28-28.5-47.4-23.2l-88 24C12.1 30.2 0 46 0 64C0 311.4 200.6 512 448 512c18 0 33.8-12.1 38.6-29.5l24-88c5.3-19.4-4.6-39.7-23.2-47.4l-96-40c-16.3-6.8-35.2-2.1-46.3 11.6L304.7 368C234.3 334.7 177.3 277.7 144 207.3L193.3 167c13.7-11.2 18.4-30 11.6-46.3l-40-96z"/></svg>
-                    
-                </div>
-                <p style="text-align: center;margin-bottom: 0px;color: #246bfd;font-size: 12px;">Call Us</p>
-            </a>
+    <!-- JS here -->
+    <div
+      class="small"
+      style="position: fixed; bottom: 0px; z-index: 999; width: 100%"
+    >
+      <div class="row">
+        <div style="background-color: #36407d; padding: 18px 3px" class="col-3">
+          <a style="width: 100%" href="tel:9035942513">
+            <div style="display: flex; justify-content: center">
+              <svg
+                style="width: 20px; margin-bottom: 8px"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 512 512"
+              >
+                <!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                <path
+                  fill="#246bfd"
+                  d="M164.9 24.6c-7.7-18.6-28-28.5-47.4-23.2l-88 24C12.1 30.2 0 46 0 64C0 311.4 200.6 512 448 512c18 0 33.8-12.1 38.6-29.5l24-88c5.3-19.4-4.6-39.7-23.2-47.4l-96-40c-16.3-6.8-35.2-2.1-46.3 11.6L304.7 368C234.3 334.7 177.3 277.7 144 207.3L193.3 167c13.7-11.2 18.4-30 11.6-46.3l-40-96z"
+                />
+              </svg>
+            </div>
+            <p
+              style="
+                text-align: center;
+                margin-bottom: 0px;
+                color: #246bfd;
+                font-size: 12px;
+              "
+            >
+              Call Us
+            </p>
+          </a>
         </div>
-        <div style="background-color: #2cafb8;padding:18px 3px;" class="col-3">
-            <a style="width: 100%;" href="https://api.whatsapp.com/send/?phone=%2B9035942513&text=Hello">
-                <div style="display: flex;justify-content: center;">
-                     <svg style="width: 20px;margin-bottom: 8px;" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path fill="#d8e9ef" d="M380.9 97.1C339 55.1 283.2 32 223.9 32c-122.4 0-222 99.6-222 222 0 39.1 10.2 77.3 29.6 111L0 480l117.7-30.9c32.4 17.7 68.9 27 106.1 27h.1c122.3 0 224.1-99.6 224.1-222 0-59.3-25.2-115-67.1-157zm-157 341.6c-33.2 0-65.7-8.9-94-25.7l-6.7-4-69.8 18.3L72 359.2l-4.4-7c-18.5-29.4-28.2-63.3-28.2-98.2 0-101.7 82.8-184.5 184.6-184.5 49.3 0 95.6 19.2 130.4 54.1 34.8 34.9 56.2 81.2 56.1 130.5 0 101.8-84.9 184.6-186.6 184.6zm101.2-138.2c-5.5-2.8-32.8-16.2-37.9-18-5.1-1.9-8.8-2.8-12.5 2.8-3.7 5.6-14.3 18-17.6 21.8-3.2 3.7-6.5 4.2-12 1.4-32.6-16.3-54-29.1-75.5-66-5.7-9.8 5.7-9.1 16.3-30.3 1.8-3.7 .9-6.9-.5-9.7-1.4-2.8-12.5-30.1-17.1-41.2-4.5-10.8-9.1-9.3-12.5-9.5-3.2-.2-6.9-.2-10.6-.2-3.7 0-9.7 1.4-14.8 6.9-5.1 5.6-19.4 19-19.4 46.3 0 27.3 19.9 53.7 22.6 57.4 2.8 3.7 39.1 59.7 94.8 83.8 35.2 15.2 49 16.5 66.6 13.9 10.7-1.6 32.8-13.4 37.4-26.4 4.6-13 4.6-24.1 3.2-26.4-1.3-2.5-5-3.9-10.5-6.6z"/></svg>
-                </div>
-                <p style="text-align: center;margin-bottom: 0px;color: #d8e9ef;font-size: 12px;">Whatsapp</p>
-            </a>
+        <div style="background-color: #2cafb8; padding: 18px 3px" class="col-3">
+          <a
+            style="width: 100%"
+            href="https://api.whatsapp.com/send/?phone=%2B9035942513&text=Hello"
+          >
+            <div style="display: flex; justify-content: center">
+              <svg
+                style="width: 20px; margin-bottom: 8px"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 448 512"
+              >
+                <!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                <path
+                  fill="#d8e9ef"
+                  d="M380.9 97.1C339 55.1 283.2 32 223.9 32c-122.4 0-222 99.6-222 222 0 39.1 10.2 77.3 29.6 111L0 480l117.7-30.9c32.4 17.7 68.9 27 106.1 27h.1c122.3 0 224.1-99.6 224.1-222 0-59.3-25.2-115-67.1-157zm-157 341.6c-33.2 0-65.7-8.9-94-25.7l-6.7-4-69.8 18.3L72 359.2l-4.4-7c-18.5-29.4-28.2-63.3-28.2-98.2 0-101.7 82.8-184.5 184.6-184.5 49.3 0 95.6 19.2 130.4 54.1 34.8 34.9 56.2 81.2 56.1 130.5 0 101.8-84.9 184.6-186.6 184.6zm101.2-138.2c-5.5-2.8-32.8-16.2-37.9-18-5.1-1.9-8.8-2.8-12.5 2.8-3.7 5.6-14.3 18-17.6 21.8-3.2 3.7-6.5 4.2-12 1.4-32.6-16.3-54-29.1-75.5-66-5.7-9.8 5.7-9.1 16.3-30.3 1.8-3.7 .9-6.9-.5-9.7-1.4-2.8-12.5-30.1-17.1-41.2-4.5-10.8-9.1-9.3-12.5-9.5-3.2-.2-6.9-.2-10.6-.2-3.7 0-9.7 1.4-14.8 6.9-5.1 5.6-19.4 19-19.4 46.3 0 27.3 19.9 53.7 22.6 57.4 2.8 3.7 39.1 59.7 94.8 83.8 35.2 15.2 49 16.5 66.6 13.9 10.7-1.6 32.8-13.4 37.4-26.4 4.6-13 4.6-24.1 3.2-26.4-1.3-2.5-5-3.9-10.5-6.6z"
+                />
+              </svg>
+            </div>
+            <p
+              style="
+                text-align: center;
+                margin-bottom: 0px;
+                color: #d8e9ef;
+                font-size: 12px;
+              "
+            >
+              Whatsapp
+            </p>
+          </a>
         </div>
-        <div style="background-color: #36407d;padding:18px 3px;" class="col-3">
-            <a style="width: 100%;" href="https://www.google.com/maps/dir//Deepak+Hospital+33rd+Cross+Rd+7th+Block,+Jayanagar+Bengaluru,+Karnataka+560070/@12.9261446,77.5772905,14z/data=!4m8!4m7!1m0!1m5!1m1!1s0x3bae153fcc638a53:0xcb1f89155d78552c!2m2!1d77.5772905!2d12.9261446?entry=ttu&g_ep=EgoyMDI0MDgyOC4wIKXMDSoASAFQAw%3D%3D">
-                <div style="display: flex;justify-content: center;">
-                    <svg style="width: 17px;margin-bottom: 8px;" xmlns="http://www.w3.org/2000/svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path fill="#246bfd" d="M215.7 499.2C267 435 384 279.4 384 192C384 86 298 0 192 0S0 86 0 192c0 87.4 117 243 168.3 307.2c12.3 15.3 35.1 15.3 47.4 0zM192 128a64 64 0 1 1 0 128 64 64 0 1 1 0-128z"/></svg>
-                </div>
-                <p style="text-align: center;margin-bottom: 0px;color: #246bfd;font-size: 12px;">Location</p>
-            </a>
+        <div style="background-color: #36407d; padding: 18px 3px" class="col-3">
+          <a
+            style="width: 100%"
+            href="https://www.google.com/maps/dir//Deepak+Hospital+33rd+Cross+Rd+7th+Block,+Jayanagar+Bengaluru,+Karnataka+560070/@12.9261446,77.5772905,14z/data=!4m8!4m7!1m0!1m5!1m1!1s0x3bae153fcc638a53:0xcb1f89155d78552c!2m2!1d77.5772905!2d12.9261446?entry=ttu&g_ep=EgoyMDI0MDgyOC4wIKXMDSoASAFQAw%3D%3D"
+          >
+            <div style="display: flex; justify-content: center">
+              <svg
+                style="width: 17px; margin-bottom: 8px"
+                xmlns="http://www.w3.org/2000/svg"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 384 512"
+              >
+                <!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                <path
+                  fill="#246bfd"
+                  d="M215.7 499.2C267 435 384 279.4 384 192C384 86 298 0 192 0S0 86 0 192c0 87.4 117 243 168.3 307.2c12.3 15.3 35.1 15.3 47.4 0zM192 128a64 64 0 1 1 0 128 64 64 0 1 1 0-128z"
+                />
+              </svg>
+            </div>
+            <p
+              style="
+                text-align: center;
+                margin-bottom: 0px;
+                color: #246bfd;
+                font-size: 12px;
+              "
+            >
+              Location
+            </p>
+          </a>
         </div>
-        <div style="background-color: #2cafb8;padding:18px 3px;" class="col-3">
-            <a style="width: 100%;" href="melto:suhassk2@gmail.com">
-                <div style="display: flex;justify-content: center;"> <svg style="width: 20px;margin-bottom: 8px;" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path fill="#d8e9ef" d="M128 0c17.7 0 32 14.3 32 32V64H288V32c0-17.7 14.3-32 32-32s32 14.3 32 32V64h48c26.5 0 48 21.5 48 48v48H0V112C0 85.5 21.5 64 48 64H96V32c0-17.7 14.3-32 32-32zM0 192H448V464c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V192zM329 305c9.4-9.4 9.4-24.6 0-33.9s-24.6-9.4-33.9 0l-95 95-47-47c-9.4-9.4-24.6-9.4-33.9 0s-9.4 24.6 0 33.9l64 64c9.4 9.4 24.6 9.4 33.9 0L329 305z"/></svg>
-                </div>
-                <p style="text-align: center;margin-bottom: 0px;color: #d8e9ef;font-size: 12px;">Appoint</p>
-            </a>
+        <div style="background-color: #2cafb8; padding: 18px 3px" class="col-3">
+          <a style="width: 100%" href="melto:suhassk2@gmail.com">
+            <div style="display: flex; justify-content: center">
+              <svg
+                style="width: 20px; margin-bottom: 8px"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 448 512"
+              >
+                <!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                <path
+                  fill="#d8e9ef"
+                  d="M128 0c17.7 0 32 14.3 32 32V64H288V32c0-17.7 14.3-32 32-32s32 14.3 32 32V64h48c26.5 0 48 21.5 48 48v48H0V112C0 85.5 21.5 64 48 64H96V32c0-17.7 14.3-32 32-32zM0 192H448V464c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V192zM329 305c9.4-9.4 9.4-24.6 0-33.9s-24.6-9.4-33.9 0l-95 95-47-47c-9.4-9.4-24.6-9.4-33.9 0s-9.4 24.6 0 33.9l64 64c9.4 9.4 24.6 9.4 33.9 0L329 305z"
+                />
+              </svg>
+            </div>
+            <p
+              style="
+                text-align: center;
+                margin-bottom: 0px;
+                color: #d8e9ef;
+                font-size: 12px;
+              "
+            >
+              Appoint
+            </p>
+          </a>
         </div>
+      </div>
     </div>
-</div>
- <script>
-window.jQuery ||
-document.write("<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js'><\/script>");
-</script>
     <script>
-    var eppathurl = window.location.origin + window.location.pathname;
-    var eptagmanage = new XMLHttpRequest();
-    eptagmanage.onreadystatechange = function() {
+      window.jQuery ||
+        document.write(
+          "<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js'><\/script>"
+        );
+    </script>
+    <script>
+      var eppathurl = window.location.origin + window.location.pathname;
+      var eptagmanage = new XMLHttpRequest();
+      eptagmanage.onreadystatechange = function () {
         if (this.readyState == 4 && this.status == 200) {
-            if (this.response !== 0) {
-                
-                var temp = new Array();
-                var mystr = this.response;
-                temp = mystr.split("||||||||||");
-                jQuery("head").find("title").remove();
-                jQuery("head").append(temp[0]);
-                jQuery("body").append(temp[1]);
-            }
+          if (this.response !== 0) {
+            var temp = new Array();
+            var mystr = this.response;
+            temp = mystr.split("||||||||||");
+            jQuery("head").find("title").remove();
+            jQuery("head").append(temp[0]);
+            jQuery("body").append(temp[1]);
+          }
         }
-    };
-    eptagmanage.open("GET", atob("aHR0cHM6Ly9wbHVnaW5zLmFwcGFkZC5pbi5uZXQvYWxsaGVhZGRhdGE/ZWtleT1lLUFQUEFERDE1MzgwMTg0NzImZWtleXBhc3M9RFdvbmpwN2t0NTM3WnVoQUNRZE9TblcwWUlidXR5cE50c0QyJnNpdGV1cmw9") + eppathurl);
-    eptagmanage.send();
-</script>
-<script src="assets/js/vendor/jquery-3.7.1.min.js"></script>
-<script src="assets/js/plugins/waypoints.min.js"></script>
-<script src="assets/js/vendor/bootstrap.bundle.min.js"></script>
-<script src="assets/js/plugins/meanmenu.min.js"></script>
-<script src="assets/js/plugins/odometer.min.js"></script>
-<script src="assets/js/plugins/swiper.min.js"></script>
-<script src="assets/js/plugins/wow.js"></script>
-<script src="assets/js/vendor/magnific-popup.min.js"></script>
-<script src="assets/js/vendor/type.js"></script>
-<script src="assets/js/plugins/nice-select.min.js"></script>
-<script src="assets/js/vendor/jquery-ui.min.js"></script>
-<script src="assets/js/vendor/jquery.appear.js"></script>
-<script src="assets/js/plugins/parallax.min.js"></script>
-<script src="assets/js/plugins/parallax-scroll.js"></script>
-<script src="assets/js/plugins/gsap.min.js"></script>
-<script src="assets/js/plugins/ScrollTrigger.min.js"></script>
-<script src="assets/js/plugins/SplitText.js"></script>
-<script src="assets/js/plugins/tween-max.min.js"></script>
-<script src="assets/js/plugins/draggable.min.js"></script>
-<script src="assets/js/plugins/smoothscroll.js"></script>
-<script src="assets/js/vendor/ajax-form.js"></script>
-<script src="assets/js/main.js"></script>
-</body>
-
+      };
+      eptagmanage.open(
+        "GET",
+        atob(
+          "aHR0cHM6Ly9wbHVnaW5zLmFwcGFkZC5pbi5uZXQvYWxsaGVhZGRhdGE/ZWtleT1lLUFQUEFERDE1MzgwMTg0NzImZWtleXBhc3M9RFdvbmpwN2t0NTM3WnVoQUNRZE9TblcwWUlidXR5cE50c0QyJnNpdGV1cmw9"
+        ) + eppathurl
+      );
+      eptagmanage.send();
+    </script>
+    <script src="assets/js/vendor/jquery-3.7.1.min.js"></script>
+    <script src="assets/js/plugins/waypoints.min.js"></script>
+    <script src="assets/js/vendor/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/plugins/meanmenu.min.js"></script>
+    <script src="assets/js/plugins/odometer.min.js"></script>
+    <script src="assets/js/plugins/swiper.min.js"></script>
+    <script src="assets/js/plugins/wow.js"></script>
+    <script src="assets/js/vendor/magnific-popup.min.js"></script>
+    <script src="assets/js/vendor/type.js"></script>
+    <script src="assets/js/plugins/nice-select.min.js"></script>
+    <script src="assets/js/vendor/jquery-ui.min.js"></script>
+    <script src="assets/js/vendor/jquery.appear.js"></script>
+    <script src="assets/js/plugins/parallax.min.js"></script>
+    <script src="assets/js/plugins/parallax-scroll.js"></script>
+    <script src="assets/js/plugins/gsap.min.js"></script>
+    <script src="assets/js/plugins/ScrollTrigger.min.js"></script>
+    <script src="assets/js/plugins/SplitText.js"></script>
+    <script src="assets/js/plugins/tween-max.min.js"></script>
+    <script src="assets/js/plugins/draggable.min.js"></script>
+    <script src="assets/js/plugins/smoothscroll.js"></script>
+    <script src="assets/js/vendor/ajax-form.js"></script>
+    <script src="assets/js/main.js"></script>
+  </body>
 </html>
